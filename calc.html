@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>My Calculator</title>
+		<link href="https://fonts.googleapis.com/css?family=Rubik+Iso&display=swap" rel="stylesheet">
+</head>
+<style type="text/css">
+
+     h1{
+     	font-family: 'Aerial',cursive;
+     	color: rgba(11, 4, 92, 0.425);
+
+	}
+	 body{
+	 	background-color: rgb(27, 219, 178);
+		
+	}
+	#cover{
+		border: 3px solid rgb(2, 2, 2);
+		border-radius: 50px;
+		width: 500px;
+		height: 500px;
+        background-color: rgb(253, 252, 253);
+
+		
+	}
+	.btn{
+		border: 2px solid rgb(5, 29, 75);
+		border-radius: 20px;
+		width: 60px;
+		height: 60px;
+        background-color: rgb(29, 125, 216);
+        text-align: center;
+	}
+    #answer{
+    	width: 200px;
+        height: 50px;
+        font-family: 'Aerial',cursive;
+        color: rgb(2, 2, 2);
+      
+    }
+    #demo{
+    	font-family: 'Aerial',cursive;
+    	color: rgb(0, 0, 0);
+    }
+</style>
+
+<body>
+	<center>
+		<h1><I>My Calculator</I></h1>
+		<form name="calculator" id="cover">
+			<br>
+			<button id="demo">Nandu's</button>
+			<br>
+			<br>
+			<br>
+			<br>
+
+			<table>
+	<td>
+					
+					
+					<tr>
+						<input type="text" name="ans" id="answer">
+					</tr>
+					<br>
+					<br>
+					<br>
+					
+					<tr>
+					    <input type="button" value="1" class="btn" onclick="document.calculator.ans.value+='1'">
+	      			    <input type="button" value="2" class="btn" onclick="document.calculator.ans.value+='2'">
+	      			    <input type="button" value="3" class="btn" onclick="document.calculator.ans.value+='3'">
+	      			    <input type="button" value="+" class="btn" onclick="document.calculator.ans.value+='+'">
+
+					</tr>
+					<br>
+					<tr>
+
+						<input type="button" value="4" class="btn" onclick="document.calculator.ans.value+='4'">
+	      			    <input type="button" value="5" class="btn" onclick="document.calculator.ans.value+='5'">
+	      			    <input type="button" value="6" class="btn" onclick="document.calculator.ans.value+='6'">
+	      			    <input type="button" value="-" class="btn" onclick="document.calculator.ans.value+='-'">
+	      			</tr>
+	      			<br>
+	      			<tr>
+	      				<input type="button" value="7" class="btn" onclick="document.calculator.ans.value+='7'">
+	      			    <input type="button" value="8" class="btn" onclick="document.calculator.ans.value+='8'">
+	      			    <input type="button" value="9" class="btn" onclick="document.calculator.ans.value+='9'">
+	      			    <input type="button" value="*" class="btn" onclick="document.calculator.ans.value+='*'">
+                    </tr>
+                    <br>
+                    <tr>
+                    	<input type="button" value="0" class="btn" onclick="document.calculator.ans.value+='0'">
+	      			    <input type="button" value="=" class="btn" onclick="document.calculator.ans.value=eval(document.calculator.ans.value)"> 
+	      			    <input type="reset" value="C" class="btn" onclick="document.calculator.ans.value+='C'">
+	      			    <input type="button" value="/" class="btn" onclick="document.calculator.ans.value+='/'">
+                    </tr>    
+
+				</td>	
+			</table>	
+        </form>
+        <script type="text/javascript">
+    	   var d = new Date();
+    	   var n = d.toidcaleDatestring();
+    	       document.getElementsByid("demo").innerHTML = n;
+    </script>
+    </center>
+</body>
+</html>
